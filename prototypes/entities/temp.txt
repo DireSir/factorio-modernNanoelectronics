@@ -1,0 +1,82 @@
+-- require("prototypes.entities/lib/pipe")
+
+data:extend({
+  {
+    type = "corpse",
+    name = "basic-molten-glass-processor-remnant",
+    localised_name = {"remnant-name", {"entity-name.basic-molten-glass-processor"}},
+    icon = "__modern-nanoelectronics__/assets/textures/remnants",
+    icon_size = 64,
+    flags = {"placeable-neutral", "building-direction-8-way", "not-on-map"},
+    selection_box = {{-7.5, -7.5}, {7.5, 7.5}},
+    tile_width = 9,
+    tile_height = 9,
+    selectable_in_game = false,
+    subgroup = "remnants",
+    order = "cube-z[remnants]-a[generic]-b[antimatter-reactor-remnant]",
+    time_before_removed = 72000, -- 20 minutes
+    final_render_layer = "remnants",
+    remove_on_tile_placement = false,
+    -- animation = make_rotated_animation_variations_from_sheet(1, {
+    --   filename = "__Krastorio2Assets__/remnants/fusion-reactor-remnant/fusion-reactor-remnant.png",
+    --   line_length = 1,
+    --   width = 1100,
+    --   height = 1100,
+    --   frame_count = 1,
+    --   direction_count = 1,
+    --   shift = {1.01, 0},
+    --   scale = 0.5,
+    -- }),
+  },
+
+  {
+    type = "assembling-machine",
+    name = "basic-molten-glass-processor",
+    icon = "____modern-nanoelectronics__/assets/textures/icons/basic-molten-glass-processor.png",
+    icon_size = 64,
+    flags = { "placeable-neutral", "placeable-player", "player-creation" },
+    minable = { mining_time = 1, result = "basic-molten-glass-processor"},
+    max_health = 800,
+    corpse = "basic-molten-glass-processor-remnant",
+    collision_box = {{-3, -3}, {3, 3}},
+    selection_box = {{-3, -3}, {3, 3}},
+    },
+    
+    -- fluid_boxes = {
+    --   {
+    --     production_type = "input",
+    --     pipe_picture = pipe_pictures.a,
+    --     pipe_covers = pipecoverspictures(),
+    --     volume = 1000,
+    --     pipe_connections = { { flow_direction = "input", direction = defines.direction.north, position = { -1, -3 } } },
+    --     secondary_draw_orders = { north = -1 },
+    --   },
+    --   {
+    --     production_type = "input",
+    --     pipe_picture = pipe_pictures.b,
+    --     pipe_covers = pipecoverspictures(),
+    --     volume = 1000,
+    --     pipe_connections = { { flow_direction = "input", direction = defines.direction.north, position = { 1, -3 } } },
+    --     secondary_draw_orders = { north = -1 },
+    --   },
+    --   {
+    --     production_type = "input",
+    --     pipe_picture = pipe_pictures.b,
+    --     pipe_covers = pipecoverspictures(),
+    --     volume = 1000,
+    --     pipe_connections = { { flow_direction = "input", direction = defines.direction.west, position = { -3, -1 } } },
+    --     secondary_draw_orders = { north = -1 },
+    --   },
+    --   {
+    --     production_type = "input",
+    --     pipe_picture = pipe_pictures.a,
+    --     pipe_covers = pipecoverspictures(),
+    --     volume = 1000,
+    --     pipe_connections = { { flow_direction = "input", direction = defines.direction.east, position = { 3, -1 } } },
+    --     secondary_draw_orders = { north = -1 },
+    --   },
+    -- },
+
+    -- open_sound = {filename = "__Krastorio2Assets__/sounds/buildings/open.ogg", volume = 1},
+    -- close_sound = {filename = "__Krastorio2Assets__/sounds/buildings/close.ogg", volume = 0.85},
+})

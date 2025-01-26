@@ -1,0 +1,1 @@
+local specialized_pipe = require("prototypes.entities.specialized-pipe")

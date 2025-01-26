@@ -1,0 +1,9 @@
+{
+  "name": "modern-nanoelectronics",
+  "version": "0.0.1",
+  "title": "Modern Nanoelectronics",
+  "author": "YourDireSir",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0"],
+  "description": "FUCK"
+}
