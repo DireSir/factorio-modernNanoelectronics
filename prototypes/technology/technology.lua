@@ -55,7 +55,7 @@ data:extend({
     {
         type = "technology",
         name = "mechanical-science-pack",
-        icon = "__modern-nanoelectronics__/assets/textures/technology/mechanical-science.png",
+        icon = "__modern-nanoelectronics__/assets/textures/technology/mechanical-science-pack.png",
         icon_size = 512,
         effects = {
             {type = "unlock-recipe", recipe = "mechanical-science-pack"},

@@ -1,6 +1,4 @@
-Mod created by: YourDireSir, aka.: DiarSerOUY; DireSir, YourDiarSerOUY
+Mod created by: YourDireSir
 Original art by: YourDireSir
-Original sound by: YourDireSir
-
-Major thanks to grandseiken for creating the Factorio mod "Ultracube" - it is licensed under GNU General Public License v3.0 (The same license this project is licensed under), and having a big mod to dissect helped me learn factotio modding a lot faster. Under GNU General Public License v3.0, I also am able to make use of project individual parts, of which I made use, by using the sand icon from his mod. 
-It is also important to mention the Factorio developers and wiki maintainers. Without them, this beatiful game would not exist, or at the very least, I wouldn't be able to create this mod. 
+Original music by: 
+Original SFX by: 
